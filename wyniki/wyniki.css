@@ -1,0 +1,44 @@
+:root {
+    --margin-from-top: -30px;
+}
+
+body {
+    width: unset;
+}
+
+table {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border: 1px solid #000;
+    border-collapse: collapse;
+}
+table th, table td {
+    border: 1px solid #000;
+    padding: 5px;
+}
+
+/* Lp column */
+table th:first-child, table td:first-child {
+    width: 10%;
+}
+
+.table-header-container {
+    padding: 8px;
+}
+
+#btn-check-status-results {
+    display: none;
+}
+
+@media print {
+    * {
+        box-shadow: none;
+    }
+    .flag, header, button {
+        display: none;
+    }
+    table {
+        page-break-inside: avoid;
+    }
+}
+
