@@ -3,9 +3,9 @@
 
 			$uid_length = 6;
 
-			$participation_price = 15;
+			$participation_price = 30;
 			$toga_price = 5;
-			$biret_price = 16;
+			$biret_price = 20;
 
 			//Functions
 
@@ -546,7 +546,7 @@
 															echo 	'<td>' . $value . '</td>';
 														}
 														else if ($key === 'payment_participation') {
-															echo ($value) ? '<td class="payment-accepted">Zaakceptowana</td>':'<td class="no-payment">Brak płatności</td>';
+															echo ($value) ? '<td class="payment-accepted">Zapłacono</td>':'<td class="no-payment">Brak płatności</td>';
 														}
 													}
 
@@ -596,7 +596,7 @@
 															echo '<td>' . $value . '</td>';
 														}
 														else if ($key === 'payment_toga') {
-															echo ($value) ? '<td class="payment-accepted">Zaakceptowana</td>':'<td class="no-payment">Brak płatności</td>';
+															echo ($value) ? '<td class="payment-accepted">Zapłacono</td>':'<td class="no-payment">Brak płatności</td>';
 														}
 													}
 
@@ -646,7 +646,7 @@
 															echo 	'<td>' . $value . '</td>';
 														}
 														else if ($key === 'payment_biret') {
-															echo ($value) ? '<td class="payment-accepted">Zaakceptowana</td>':'<td class="no-payment">Brak płatności</td>';
+															echo ($value) ? '<td class="payment-accepted">Zapłacono</td>':'<td class="no-payment">Brak płatności</td>';
 														}
 													}
 
